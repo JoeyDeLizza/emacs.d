@@ -33,3 +33,5 @@
   :straight t
   :config
   )
+
+(setq backup-directory-alist '(("." . "~/.emacs.d/MyEmacsBackups")))
