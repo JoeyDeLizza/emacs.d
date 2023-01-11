@@ -34,4 +34,15 @@
   :config
   )
 
+(use-package evil
+  :straight t
+  :config
+  (evil-mode 1)
+  )
+
+(use-package plantuml-mode
+  :straight t
+  :config
+  )
+
 (setq backup-directory-alist '(("." . "~/.emacs.d/MyEmacsBackups")))
