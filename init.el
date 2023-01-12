@@ -18,31 +18,38 @@
 ;; Install use-package
 (straight-use-package 'use-package)
 
+;;;;;;; Installed Packages ;;;;;;;;;;;;;;
+
 ;;Zenburn Theme
 (use-package zenburn-theme
   :straight t
   :config (load-theme 'zenburn t))
 
+;; Helm Package
 (use-package helm
   :straight t
   :config
   (global-set-key (kbd "M-x") 'helm-M-x)
   (global-set-key (kbd "C-x C-f") #'helm-find-files))
 
+;; magit package
 (use-package magit
   :straight t
   :config
   )
 
+;; evil package
 (use-package evil
   :straight t
   :config
   (evil-mode 1)
   )
 
+;; plantuml package
 (use-package plantuml-mode
   :straight t
   :config
   )
 
+;; Set directory of backup files
 (setq backup-directory-alist '(("." . "~/.emacs.d/MyEmacsBackups")))
