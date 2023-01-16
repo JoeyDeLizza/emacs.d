@@ -51,5 +51,14 @@
   :config
   )
 
+;; avy package
+(use-package avy
+  :straight t
+  :config
+  )
+
+;; evil key bindings
+(evil-define-key 'normal 'global ";" 'avy-goto-char)
+
 ;; Set directory of backup files
 (setq backup-directory-alist '(("." . "~/.emacs.d/MyEmacsBackups")))
